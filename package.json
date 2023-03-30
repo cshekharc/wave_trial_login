@@ -1,0 +1,14 @@
+{
+  "name": "wave_trial_login",
+  "version": "1.0.0",
+  "description": "This project is to test login and logout functionalities of the wave trial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.9.0"
+  }
+}

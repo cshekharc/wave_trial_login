@@ -1,0 +1,16 @@
+Feature: Login Smoke
+
+    Feature Description: This feature file is for testing login feature with different credentials
+
+    Scenario Outline: Login with different credentials
+        Given I access Wave trial portal
+        When I enter a username <username>
+        And I enter a password <password>
+        And I click on the login button
+        Then I should see <message>
+
+        Examples:
+            | username        | password         | message |
+            | qa-assignment   | qa-Bynder2023!   | Pass    |
+            | " "             | qa-Bynde         | Fail    |
+            | qa-assig        | " "              | Fail    |
